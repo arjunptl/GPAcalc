@@ -1,0 +1,194 @@
+/* General styling for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #683d42;
+    margin: 10px; /* Margin around the body */
+    padding: 0;
+}
+
+/* Container to hold the entire content */
+.container {
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Horizontally centering the content */
+    align-items: flex-start; /* Aligning items at the top vertically */
+}
+
+/* Styling for the panel containing instructions */
+.instructions-panel {
+    padding: 15px; /* Padding inside the panel */
+    background-color: #3e8464; /* Background color */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    margin-right: 20px; /* Spacing between panels */
+    max-width: 300px; /* Maximum width of the panel */
+}
+
+/* Styling for the main content area */
+.app-container {
+    background-color: #993e4b; /* Background color */
+    max-width: 900px; /* Maximum width of the content */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    text-align: center; /* Centering the text */
+}
+
+/* Styling for the panel containing study tips */
+.study-tips-panel {
+    padding: 15px; /* Padding inside the panel */
+    background-color: #3e8464; /* Background color */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adding shadow */
+    margin-left: 20px; /* Spacing between panels */
+    max-width: 300px; /* Maximum width of the panel */
+}
+
+/* Header styling */
+.header {
+    background-color: #3e8464; /* Background color */
+    padding: 5px; /* Padding inside the header */
+    border-radius: 10px 10px 0 0; /* Rounded corners */
+    color: white; /* Text color */
+}
+
+/* Styling for the form elements */
+.course-form .course {
+    margin: 10px 0; /* Margin between form elements */
+}
+
+/* Styling for labels in the form */
+.course-form label {
+    display: block; /* Displaying labels as blocks */
+    margin-bottom: 5px; /* Margin at the bottom of labels */
+}
+
+/* Styling for select dropdowns and input fields */
+.course-form select,
+.course-form input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the fields */
+    border: 1px solid #608979; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styling */
+button {
+    background-color: #608979; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Styling for unordered lists */
+.courses-list ul {
+    list-style: none; /* Removing default list styles */
+    padding: 0; /* Removing default padding */
+}
+
+/* Styling for the GPA result */
+.result {
+    margin-top: 20px; /* Margin at the top */
+    font-size: 1.5em; /* Font size */
+    color: white; /* Text color */
+}
+
+/* Styling for bold text */
+.result span {
+    font-weight: bold; /* Making text bold */
+}
+
+/* Styling for the calculate button */
+#calculate {
+    margin: 20px 0; /* Margin top and bottom */
+}
+
+/* Styling for input fields */
+.course input {
+    width: 30px; /* Setting width */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Margin at the top */
+    border-collapse: collapse; /* Collapsing borders */
+}
+
+/* Styling for table headers and cells */
+th, td {
+    border: 1px solid #ddd; /* Border style */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Aligning text to the left */
+}
+
+/* Styling for table headers */
+th {
+    background-color: #f2f2f2; /* Background color */
+}
+
+/* Styling for credits */
+.credits {
+    color: #000000; /* Text color */
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Styling for developer name */
+.name {
+    color: #c2c2c2; /* Text color */
+}
+
+/* Styling for labels */
+label {
+    color: #c2c2c2; /* Text color */
+}
+
+/* Styling for the courses table */
+#courses-table {
+    display: none; /* Initially hidden */
+}
+
+/* Styling for delete button */
+.delete-button {
+    background-color: #c0392b; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    font-size: 12px; /* Font size */
+    margin-left: 5px; /* Margin on the left */
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative; /* Relative positioning */
+    display: inline-block; /* Display as inline block */
+}
+
+/* Styling for tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden; /* Initially hidden */
+    width: 220px; /* Width */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Text alignment */
+    border-radius: 6px; /* Rounded corners */
+    padding: 5px; /* Padding inside tooltip */
+    position: absolute; /* Absolute positioning */
+    z-index: 1; /* Z-index to ensure it appears on top */
+    bottom: 125%; /* Positioning relative to parent */
+    left: 50%; /* Center horizontally */
+    margin-left: -110px; /* Adjusting margin for center alignment */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s; /* Adding transition effect */
+}
+
+/* Styling for tooltip on hover */
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Making tooltip visible on hover */
+    opacity: 1; /* Making it fully opaque */
+}
